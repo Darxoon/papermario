@@ -1,3 +1,6 @@
+#ifndef _BATTLE_BATTLE_NAMES_H
+#define _BATTLE_BATTLE_NAMES_H
+
 enum BattleNames {
     BTL_KMR_1_FORMATION_00     = 0x0000,
     BTL_KMR_1_FORMATION_01     = 0x0001,
@@ -563,3 +566,5 @@ enum BattleNames {
     BTL_DIG_FORMATION_08       = 0x2708,
     BTL_DIG_FORMATION_09       = 0x2709,
 };
+
+#endif
