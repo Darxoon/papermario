@@ -15,6 +15,7 @@ Checks: >
   -readability-function-cognitive-complexity,
   -readability-identifier-length,
   -readability-math-missing-parentheses,
+  -readability-suspicious-call-argument,
 CheckOptions:
   # TEMP: this only disabled because mips2c outputs snake_case
   #- key: readability-identifier-naming.LocalVariableCase
