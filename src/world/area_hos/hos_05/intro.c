@@ -1581,11 +1581,11 @@ s32 N(CurrentStoryPageTime)= 0;
 u32 N(BowserSilhouetteTime) = 0;
 
 s32 N(StoryPageDuration)[] = {
-    [STORY_PAGE_BLANK]          222 * DT,
-    [STORY_PAGE_STARRY_SKY]     338 * DT,
-    [STORY_PAGE_SHRINE_EXT]     338 * DT,
-    [STORY_PAGE_STAR_ROD]       338 * DT,
-    [STORY_PAGE_SHRINE_INT]     622 * DT,
+    [STORY_PAGE_BLANK]          = 222 * DT,
+    [STORY_PAGE_STARRY_SKY]     = 338 * DT,
+    [STORY_PAGE_SHRINE_EXT]     = 338 * DT,
+    [STORY_PAGE_STAR_ROD]       = 338 * DT,
+    [STORY_PAGE_SHRINE_INT]     = 622 * DT,
 };
 
 s32 N(NextPageAnimOffsetsX)[] = {

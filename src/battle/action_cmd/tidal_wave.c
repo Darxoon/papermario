@@ -28,7 +28,7 @@ enum {
     TIDAL_WAVE_INPUT_A          = 0,
     TIDAL_WAVE_INPUT_B          = 1,
     TIDAL_WAVE_INPUT_C_DOWN     = 2,
-    TIDAL_WAVE_INPUT_COUNT,
+    TIDAL_WAVE_INPUT_COUNT      = 3,
 };
 
 HudScript* HudButtonsUp[TIDAL_WAVE_INPUT_COUNT] = { &HES_PressAButton, &HES_PressBButton, &HES_PressCDownButton };
