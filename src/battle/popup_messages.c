@@ -112,108 +112,108 @@ EntityModelScript* BonkModelScripts[] = {
 };
 
 s32 BattleMessages[] = {
-    [BTL_MSG_MERLEE_ATK_UP]         MSG_Menus_Merlee_IncreaseAttack,
-    [BTL_MSG_MERLEE_DEF_UP]         MSG_Menus_Merlee_DecreaseDamage,
-    [BTL_MSG_MERLEE_EXP_UP]         MSG_Menus_Merlee_IncreaseStarPoints,
-    [BTL_MSG_MERLEE_DONE]           MSG_Menus_Merlee_Exhausted,
-    [BTL_MSG_CHARGE_HAMMER]         MSG_Menus_ChargeHammer,
-    [BTL_MSG_CHARGE_HAMMER_MORE]    MSG_Menus_ChargeHammerMore,
-    [BTL_MSG_CHARGE_JUMP]           MSG_Menus_ChargeJump,
-    [BTL_MSG_CHARGE_JUMP_MORE]      MSG_Menus_ChargeJumpMore,
-    [BTL_MSG_CANT_CHARGE]           MSG_Menus_ChargeMaxedOut,
-    [BTL_MSG_ENEMY_MISSED]          MSG_Menus_EnemyMissed,
+    [BTL_MSG_MERLEE_ATK_UP]         = MSG_Menus_Merlee_IncreaseAttack,
+    [BTL_MSG_MERLEE_DEF_UP]         = MSG_Menus_Merlee_DecreaseDamage,
+    [BTL_MSG_MERLEE_EXP_UP]         = MSG_Menus_Merlee_IncreaseStarPoints,
+    [BTL_MSG_MERLEE_DONE]           = MSG_Menus_Merlee_Exhausted,
+    [BTL_MSG_CHARGE_HAMMER]         = MSG_Menus_ChargeHammer,
+    [BTL_MSG_CHARGE_HAMMER_MORE]    = MSG_Menus_ChargeHammerMore,
+    [BTL_MSG_CHARGE_JUMP]           = MSG_Menus_ChargeJump,
+    [BTL_MSG_CHARGE_JUMP_MORE]      = MSG_Menus_ChargeJumpMore,
+    [BTL_MSG_CANT_CHARGE]           = MSG_Menus_ChargeMaxedOut,
+    [BTL_MSG_ENEMY_MISSED]          = MSG_Menus_EnemyMissed,
 
     // player status effects
-    [BTL_MSG_PLAYER_DAZED]          MSG_Menus_PlayerDazed,
-    [BTL_MSG_PLAYER_ASLEEP]         MSG_Menus_PlayerAsleep,
-    [BTL_MSG_PLAYER_FROZEN]         MSG_Menus_PlayerFrozen,
-    [BTL_MSG_PLAYER_POISONED]       MSG_Menus_PlayerPoisoned,
-    [BTL_MSG_PLAYER_SHRUNK]         MSG_Menus_PlayerShrunk,
-    [BTL_MSG_PLAYER_PARALYZED]      MSG_Menus_PlayerParalyzed,
-    [BTL_MSG_PLAYER_CHARGED]        MSG_Menus_PlayerElectricCharge,
-    [BTL_MSG_PLAYER_TRANSPARENT]    MSG_Menus_PlayerTransparent,
+    [BTL_MSG_PLAYER_DAZED]          = MSG_Menus_PlayerDazed,
+    [BTL_MSG_PLAYER_ASLEEP]         = MSG_Menus_PlayerAsleep,
+    [BTL_MSG_PLAYER_FROZEN]         = MSG_Menus_PlayerFrozen,
+    [BTL_MSG_PLAYER_POISONED]       = MSG_Menus_PlayerPoisoned,
+    [BTL_MSG_PLAYER_SHRUNK]         = MSG_Menus_PlayerShrunk,
+    [BTL_MSG_PLAYER_PARALYZED]      = MSG_Menus_PlayerParalyzed,
+    [BTL_MSG_PLAYER_CHARGED]        = MSG_Menus_PlayerElectricCharge,
+    [BTL_MSG_PLAYER_TRANSPARENT]    = MSG_Menus_PlayerTransparent,
 
     // enemy status effects
-    [BTL_MSG_ENEMY_DAZED]           MSG_Menus_EnemyDazed,
-    [BTL_MSG_ENEMY_ASLEEP]          MSG_Menus_EnemyAsleep,
-    [BTL_MSG_ENEMY_FROZEN]          MSG_Menus_EnemyFrozen,
-    [BTL_MSG_ENEMY_POISONED]        MSG_Menus_EnemyPoisoned,
-    [BTL_MSG_ENEMY_SHRUNK]          MSG_Menus_EnemyShrunk,
-    [BTL_MSG_ENEMY_PARALYZED]       MSG_Menus_EnemyParalyzed,
-    [BTL_MSG_ENEMY_ELECTRIFIED]     MSG_Menus_EnemyElectrified,
-    [BTL_MSG_ENEMY_CANT_MOVE]       MSG_Menus_EnemyCantMove,
+    [BTL_MSG_ENEMY_DAZED]           = MSG_Menus_EnemyDazed,
+    [BTL_MSG_ENEMY_ASLEEP]          = MSG_Menus_EnemyAsleep,
+    [BTL_MSG_ENEMY_FROZEN]          = MSG_Menus_EnemyFrozen,
+    [BTL_MSG_ENEMY_POISONED]        = MSG_Menus_EnemyPoisoned,
+    [BTL_MSG_ENEMY_SHRUNK]          = MSG_Menus_EnemyShrunk,
+    [BTL_MSG_ENEMY_PARALYZED]       = MSG_Menus_EnemyParalyzed,
+    [BTL_MSG_ENEMY_ELECTRIFIED]     = MSG_Menus_EnemyElectrified,
+    [BTL_MSG_ENEMY_CANT_MOVE]       = MSG_Menus_EnemyCantMove,
 
-    [BTL_MSG_STAR_POWER_RECHARGED]  MSG_Menus_StarEnergyRecharged,
-    [BTL_MSG_STAR_POWER_MAXED]      MSG_Menus_StarEnergyMaxedOut,
-    [BTL_MSG_STAR_POWER_FILLED]     MSG_Menus_StarEnergyFilled,
-    [BTL_MSG_ATTACK_UP]             MSG_Menus_AttackUp,
-    [BTL_MSG_DEFENCE_UP]            MSG_Menus_DefenseUp,
-    [BTL_MSG_HEAL_ONE]              MSG_Menus_HealOne,
-    [BTL_MSG_HEAL_ALL]              MSG_Menus_HealAll,
+    [BTL_MSG_STAR_POWER_RECHARGED]  = MSG_Menus_StarEnergyRecharged,
+    [BTL_MSG_STAR_POWER_MAXED]      = MSG_Menus_StarEnergyMaxedOut,
+    [BTL_MSG_STAR_POWER_FILLED]     = MSG_Menus_StarEnergyFilled,
+    [BTL_MSG_ATTACK_UP]             = MSG_Menus_AttackUp,
+    [BTL_MSG_DEFENCE_UP]            = MSG_Menus_DefenseUp,
+    [BTL_MSG_HEAL_ONE]              = MSG_Menus_HealOne,
+    [BTL_MSG_HEAL_ALL]              = MSG_Menus_HealAll,
 
-    [BTL_MSG_ENEMY_TRANSPARENT]     MSG_Menus_EnemyTransparent,
-    [BTL_MSG_ENEMY_CHARGED]         MSG_Menus_EnemyElectricCharge,
-    [BTL_MSG_PARTNER_INJURED]       MSG_Menus_PartnerInjured,
-    [BTL_MSG_CHARGE_GOOMBARIO]      MSG_Menus_ChargeGoombario,
-    [BTL_MSG_CHARGE_GOOMBARIO_MORE] MSG_Menus_ChargeGoombarioMore,
-    [BTL_MSG_WATER_BLOCK_BEGIN]     MSG_Menus_WaterBlockBegin,
-    [BTL_MSG_WATER_BLOCK_END]       MSG_Menus_WaterBlockEnd,
-    [BTL_MSG_CLOUD_NINE_BEGIN]      MSG_Menus_CloudNineBegin,
-    [BTL_MSG_CLOUD_NINE_END]        MSG_Menus_CloudNineEnd,
-    [BTL_MSG_TURBO_CHARGE_BEGIN]    MSG_Menus_TurboChargeBegin,
-    [BTL_MSG_TURBO_CHARGE_END]      MSG_Menus_TurboChargeEnd,
-    [BTL_MSG_CHILL_OUT_BEGIN]       MSG_Menus_ChillOutBegin,
-    [BTL_MSG_UNUSED_CLOUD_NINE]     MSG_Menus_CloudNineBegin,
+    [BTL_MSG_ENEMY_TRANSPARENT]     = MSG_Menus_EnemyTransparent,
+    [BTL_MSG_ENEMY_CHARGED]         = MSG_Menus_EnemyElectricCharge,
+    [BTL_MSG_PARTNER_INJURED]       = MSG_Menus_PartnerInjured,
+    [BTL_MSG_CHARGE_GOOMBARIO]      = MSG_Menus_ChargeGoombario,
+    [BTL_MSG_CHARGE_GOOMBARIO_MORE] = MSG_Menus_ChargeGoombarioMore,
+    [BTL_MSG_WATER_BLOCK_BEGIN]     = MSG_Menus_WaterBlockBegin,
+    [BTL_MSG_WATER_BLOCK_END]       = MSG_Menus_WaterBlockEnd,
+    [BTL_MSG_CLOUD_NINE_BEGIN]      = MSG_Menus_CloudNineBegin,
+    [BTL_MSG_CLOUD_NINE_END]        = MSG_Menus_CloudNineEnd,
+    [BTL_MSG_TURBO_CHARGE_BEGIN]    = MSG_Menus_TurboChargeBegin,
+    [BTL_MSG_TURBO_CHARGE_END]      = MSG_Menus_TurboChargeEnd,
+    [BTL_MSG_CHILL_OUT_BEGIN]       = MSG_Menus_ChillOutBegin,
+    [BTL_MSG_UNUSED_CLOUD_NINE]     = MSG_Menus_CloudNineBegin,
 
     // move action command tips
-    [BTL_MSG_ACTION_TIP_PRESS_BEFORE_LANDING]   MSG_Menus_MoveTip_PressBeforeLanding,
-    [BTL_MSG_ACTION_TIP_HOLD_LEFT_TIMED]        MSG_Menus_MoveTip_PushLeftWithTiming,
-    [BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE]    MSG_Menus_MoveTip_PressBeforeStriking,
-    [BTL_MSG_ACTION_TIP_MASH_BUTTON]            MSG_Menus_MoveTip_PressRepeatedly,
-    [BTL_MSG_ACTION_TIP_MASH_LEFT]              MSG_Menus_MoveTip_PushLeftRepeatedly,
-    [BTL_MSG_ACTION_TIP_HOLD_LEFT_AIM]          MSG_Menus_MoveTip_PushLeftToAim,
-    [BTL_MSG_ACTION_TIP_UNUSED_1]               MSG_Menus_MoveTip_PressBeforeLanding,
-    [BTL_MSG_ACTION_TIP_UNUSED_2]               MSG_Menus_MoveTip_PressBeforeLanding,
-    [BTL_MSG_ACTION_TIP_PRESS_BUTTONS_SHOWN]    MSG_Menus_MoveTip_PressAsShown,
-    [BTL_MSG_ACTION_TIP_NOT_USED_1]             MSG_Menus_MoveTip_NOT_USED_1,
-    [BTL_MSG_ACTION_TIP_PRESS_WITH_TIMING]      MSG_Menus_MoveTip_PressAsLightsUp,
-    [BTL_MSG_ACTION_TIP_NOT_USED_2]             MSG_Menus_MoveTip_NOT_USED_2,
-    [BTL_MSG_ACTION_TIP_MASH_BOTH]              MSG_Menus_MoveTip_PressBothRepeatedly,
-    [BTL_MSG_ACTION_TIP_UNUSED_3]               MSG_Menus_MoveTip_PressBeforeLanding,
-    [BTL_MSG_ACTION_TIP_HOLD_THEN_TAP]          MSG_Menus_MoveTip_HoldThenTap,
-    [BTL_MSG_ACTION_TIP_HOLD_THEN_RELEASE]      MSG_Menus_MoveTip_HoldThenRelease,
-    [BTL_MSG_ACTION_TIP_MOVE_TO_AIM]            MSG_Menus_MoveTip_MoveToAim,
-    [BTL_MSG_ACTION_TIP_UNUSED_4]               MSG_Menus_MoveTip_PressBeforeLanding,
-    [BTL_MSG_ACTION_TIP_BREAK_FREE]             MSG_Menus_MoveTip_PressToRunAway,
-    [BTL_MSG_ACTION_TIP_REDUCE_DAMAGE]          MSG_Menus_MoveTip_PressToReduceDamage,
-    [BTL_MSG_ACTION_TIP_NOT_USED_3]             MSG_Menus_MoveTip_NOT_USED_3,
+    [BTL_MSG_ACTION_TIP_PRESS_BEFORE_LANDING]   = MSG_Menus_MoveTip_PressBeforeLanding,
+    [BTL_MSG_ACTION_TIP_HOLD_LEFT_TIMED]        = MSG_Menus_MoveTip_PushLeftWithTiming,
+    [BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE]    = MSG_Menus_MoveTip_PressBeforeStriking,
+    [BTL_MSG_ACTION_TIP_MASH_BUTTON]            = MSG_Menus_MoveTip_PressRepeatedly,
+    [BTL_MSG_ACTION_TIP_MASH_LEFT]              = MSG_Menus_MoveTip_PushLeftRepeatedly,
+    [BTL_MSG_ACTION_TIP_HOLD_LEFT_AIM]          = MSG_Menus_MoveTip_PushLeftToAim,
+    [BTL_MSG_ACTION_TIP_UNUSED_1]               = MSG_Menus_MoveTip_PressBeforeLanding,
+    [BTL_MSG_ACTION_TIP_UNUSED_2]               = MSG_Menus_MoveTip_PressBeforeLanding,
+    [BTL_MSG_ACTION_TIP_PRESS_BUTTONS_SHOWN]    = MSG_Menus_MoveTip_PressAsShown,
+    [BTL_MSG_ACTION_TIP_NOT_USED_1]             = MSG_Menus_MoveTip_NOT_USED_1,
+    [BTL_MSG_ACTION_TIP_PRESS_WITH_TIMING]      = MSG_Menus_MoveTip_PressAsLightsUp,
+    [BTL_MSG_ACTION_TIP_NOT_USED_2]             = MSG_Menus_MoveTip_NOT_USED_2,
+    [BTL_MSG_ACTION_TIP_MASH_BOTH]              = MSG_Menus_MoveTip_PressBothRepeatedly,
+    [BTL_MSG_ACTION_TIP_UNUSED_3]               = MSG_Menus_MoveTip_PressBeforeLanding,
+    [BTL_MSG_ACTION_TIP_HOLD_THEN_TAP]          = MSG_Menus_MoveTip_HoldThenTap,
+    [BTL_MSG_ACTION_TIP_HOLD_THEN_RELEASE]      = MSG_Menus_MoveTip_HoldThenRelease,
+    [BTL_MSG_ACTION_TIP_MOVE_TO_AIM]            = MSG_Menus_MoveTip_MoveToAim,
+    [BTL_MSG_ACTION_TIP_UNUSED_4]               = MSG_Menus_MoveTip_PressBeforeLanding,
+    [BTL_MSG_ACTION_TIP_BREAK_FREE]             = MSG_Menus_MoveTip_PressToRunAway,
+    [BTL_MSG_ACTION_TIP_REDUCE_DAMAGE]          = MSG_Menus_MoveTip_PressToReduceDamage,
+    [BTL_MSG_ACTION_TIP_NOT_USED_3]             = MSG_Menus_MoveTip_NOT_USED_3,
 
     // no targets available
-    [BTL_MSG_NO_JUMP_TARGET]        MSG_Menus_Battle_NoTarget_Jump,
-    [BTL_MSG_NO_HAMMER_TARGET]      MSG_Menus_Battle_NoTarget_Hammer,
-    [BTL_MSG_NO_ITEM_TARGET]        MSG_Menus_Battle_NoTarget_Item,
+    [BTL_MSG_NO_JUMP_TARGET]        = MSG_Menus_Battle_NoTarget_Jump,
+    [BTL_MSG_NO_HAMMER_TARGET]      = MSG_Menus_Battle_NoTarget_Hammer,
+    [BTL_MSG_NO_ITEM_TARGET]        = MSG_Menus_Battle_NoTarget_Item,
 #if VERSION_JP
-    [BTL_MSG_46]                    MSG_Menus_JP_00DB,
-    [BTL_MSG_47]                    MSG_Menus_JP_00DC,
+    [BTL_MSG_46]                    = MSG_Menus_JP_00DB,
+    [BTL_MSG_47]                    = MSG_Menus_JP_00DC,
 #else
-    [BTL_MSG_46]                    MSG_NONE,
-    [BTL_MSG_47]                    MSG_NONE,
+    [BTL_MSG_46]                    = MSG_NONE,
+    [BTL_MSG_47]                    = MSG_NONE,
 #endif
 
     // errors and warnings
-    [BTL_MSG_CANT_SELECT_NOW]       MSG_Menus_Battle_CantSelectNow,
-    [BTL_MSG_HAMMER_DISABLED_1]     MSG_Menus_Battle_CantUseHammer,
-    [BTL_MSG_HAMMER_DISABLED_2]     MSG_Menus_Battle_CantUseHammer,
-    [BTL_MSG_HAMMER_DISABLED_3]     MSG_Menus_Battle_CantUseHammer,
-    [BTL_MSG_JUMP_DISABLED_1]       MSG_Menus_Battle_CantUseJump,
-    [BTL_MSG_JUMP_DISABLED_2]       MSG_Menus_Battle_CantUseJump,
-    [BTL_MSG_JUMP_DISABLED_3]       MSG_Menus_Battle_CantUseJump,
-    [BTL_MSG_ITEMS_DISABLED]        MSG_Menus_Battle_CantUseItems,
-    [BTL_MSG_CANT_SWITCH]           MSG_Menus_Battle_CantSwitch,
-    [BTL_MSG_CANT_MOVE]             MSG_Menus_Battle_CantMove,
-    [BTL_MSG_CANT_SWITCH_UNUSED]    MSG_Menus_Battle_CantSwitch,
-    [BTL_MSG_CANT_MOVE_UNUSED]      MSG_Menus_Battle_CantMove,
-    [BTL_MSG_CANT_SELECT_NOW_ALT]   MSG_Menus_Battle_CantSelectNow,
+    [BTL_MSG_CANT_SELECT_NOW]       = MSG_Menus_Battle_CantSelectNow,
+    [BTL_MSG_HAMMER_DISABLED_1]     = MSG_Menus_Battle_CantUseHammer,
+    [BTL_MSG_HAMMER_DISABLED_2]     = MSG_Menus_Battle_CantUseHammer,
+    [BTL_MSG_HAMMER_DISABLED_3]     = MSG_Menus_Battle_CantUseHammer,
+    [BTL_MSG_JUMP_DISABLED_1]       = MSG_Menus_Battle_CantUseJump,
+    [BTL_MSG_JUMP_DISABLED_2]       = MSG_Menus_Battle_CantUseJump,
+    [BTL_MSG_JUMP_DISABLED_3]       = MSG_Menus_Battle_CantUseJump,
+    [BTL_MSG_ITEMS_DISABLED]        = MSG_Menus_Battle_CantUseItems,
+    [BTL_MSG_CANT_SWITCH]           = MSG_Menus_Battle_CantSwitch,
+    [BTL_MSG_CANT_MOVE]             = MSG_Menus_Battle_CantMove,
+    [BTL_MSG_CANT_SWITCH_UNUSED]    = MSG_Menus_Battle_CantSwitch,
+    [BTL_MSG_CANT_MOVE_UNUSED]      = MSG_Menus_Battle_CantMove,
+    [BTL_MSG_CANT_SELECT_NOW_ALT]   = MSG_Menus_Battle_CantSelectNow,
 };
 
 #if VERSION_JP
@@ -279,8 +279,8 @@ extern HudScript HES_TimingBlink;
 void btl_bonk_update(void* data);
 void btl_bonk_render(void* data);
 void btl_bonk_setup_gfx(void* data);
-void btl_update_message_popup(void* popup);
-void btl_show_message_popup(void* popup);
+void btl_update_message_popup(void* data);
+void btl_show_message_popup(void* data);
 
 void btl_popup_messages_init(void) {
     s32 i;
@@ -589,11 +589,11 @@ API_CALLABLE(ShowImmuneBonk) {
     s32 x = evt_get_variable(script, *args++);
     s32 y = evt_get_variable(script, *args++);
     s32 z = evt_get_variable(script, *args++);
+    s32 numStars = evt_get_variable(script, *args++);
     s32 arg4 = evt_get_variable(script, *args++);
     s32 arg5 = evt_get_variable(script, *args++);
-    s32 arg6 = evt_get_variable(script, *args++);
 
-    show_immune_bonk(x, y, z, arg4, arg5, arg6);
+    show_immune_bonk(x, y, z, numStars, arg4, arg5);
     return ApiStatus_DONE2;
 }
 
