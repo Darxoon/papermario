@@ -1,12 +1,8 @@
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
-#include "ultra64.h"
-#include "common.h"
 #include "map.h"
 #include "enums.h"
-#include "stdlib/stdarg.h"
-#include "libc/xstdio.h"
 
 f32 fabsf(f32 f);
 f64 fabs(f64 f);

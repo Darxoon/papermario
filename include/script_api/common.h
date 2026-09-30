@@ -8,7 +8,7 @@
 #ifndef _SCRIPT_API_COMMON_H_
 #define _SCRIPT_API_COMMON_H_
 
-#include "../common.h"
+#include "common_structs.h"
 #include "macros.h"
 
 /// @{

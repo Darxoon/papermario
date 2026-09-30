@@ -1,7 +1,6 @@
-#include "common.h"
 #include "effects.h"
 #include "entity.h"
-#include "battle/battle.h"
+#include "message_ids.h"
 #include "battle/action_cmd.h"
 
 extern EntityModelScript EMS_BonkIcon;

@@ -1,3 +1,4 @@
+#include "functions.h"
 #include "battle/battle.h"
 
 BSS char D_8029F660[0x400]; // unused?

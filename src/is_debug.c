@@ -1,5 +1,7 @@
-#include "common.h"
+#include "types.h"
+#include "macros.h"
 #include "stdlib/stdarg.h"
+#include "libc/xstdio.h"
 #include "nu/nusys.h"
 
 typedef struct {

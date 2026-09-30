@@ -1,8 +1,7 @@
 #ifndef _BATTLE_BATTLE_H_
 #define _BATTLE_BATTLE_H_
 
-#include "common.h"
-#include "message_ids.h"
+#include "common_structs.h"
 
 // Terminates foreground model lists
 #define STAGE_MODEL_LIST_END 0
