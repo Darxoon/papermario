@@ -1,3 +1,4 @@
 CompileFlags:
-  Add: [-Wno-unknown-warning-option, --target=mips-unknown-elf]
+  # no-excess-initializers required for variable length structs
+  Add: [-Wno-unknown-warning-option, --target=mips-unknown-elf, -Wno-excess-initializers, -Wno-macro-redefined]
   Remove: [-m*, -f*]
