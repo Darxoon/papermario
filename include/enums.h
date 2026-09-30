@@ -5250,7 +5250,7 @@ enum BattleMenuStatus {
 enum DictionaryIndex {
     DICTIONARY_KEY   = 0,
     DICTIONARY_VALUE = 1,
-    DICTIONARY_SIZE,
+    DICTIONARY_SIZE  = 2,
 };
 
 enum WindowID {

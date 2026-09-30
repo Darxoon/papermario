@@ -696,8 +696,8 @@ void au_mseq_player_update(AmbienceManager* manager, AmbiencePlayer* player) {
     }
 }
 
-u8 au_mseq_read_next(AmbiencePlayer* state) {
-    u8 value = *state->mseqReadPos++;
+u8 au_mseq_read_next(AmbiencePlayer* player) {
+    u8 value = *player->mseqReadPos++;
     return value;
 }
 

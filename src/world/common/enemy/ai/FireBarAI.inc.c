@@ -161,7 +161,6 @@ void N(FireBarAI_Callback)(FireBarData* data, s32 mode) {
             data->rotRate = abs(data->settings->rotRate) * signF(-data->rotRate);
             break;
     }
-    return;
 }
 
 #endif

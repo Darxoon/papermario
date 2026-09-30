@@ -199,7 +199,7 @@ void draw_mash_meter_blink(s32 posX, s32 posY, s32 fillValue);
 void draw_mash_meter_multicolor(s32 posX, s32 posY, s32 fillValue);
 void draw_mash_meter_mode_with_divisor(s32 posX, s32 posY, s32 fillValue, s32 divisor, s32 colorMode);
 void draw_mash_meter_blink_with_divisor(s32 posX, s32 posY, s32 fillValue, s32 divisor);
-s32 adjust_action_command_difficulty(s32 arg0);
+s32 adjust_action_command_difficulty(s32 difficultyLevel);
 s32 check_block_input(s32 buttonMask);
 
 API_CALLABLE(LoadActionCommand);

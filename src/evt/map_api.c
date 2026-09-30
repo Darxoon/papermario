@@ -6,7 +6,6 @@
 
 extern LavaReset* gLavaResetList;
 extern s32 LastSafeFloor;
-extern ModelTreeInfoList* gCurrentModelTreeNodeInfo;
 
 API_CALLABLE(TranslateModel) {
     Bytecode* args = script->ptrReadPos;

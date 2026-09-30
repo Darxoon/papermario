@@ -472,11 +472,11 @@ void render_complex_hud_element(HudElement* hudElement);
 
 void render_transformed_hud_elements(void);
 
-void immediately_render_complex_hud_element(s32 arg0, s32 arg1, s32 camID);
-void hud_element_draw_complex_hud_first(s32 arg0);
-void hud_element_draw_complex_hud_next(s32 arg0);
-void hud_element_draw_complex_battle_first(s32 arg0);
-void hud_element_draw_complex_battle_next(s32 arg0);
+void immediately_render_complex_hud_element(s32 elemID, s32 arg1, s32 camID);
+void hud_element_draw_complex_hud_first(s32 id);
+void hud_element_draw_complex_hud_next(s32 id);
+void hud_element_draw_complex_battle_first(s32 id);
+void hud_element_draw_complex_battle_next(s32 id);
 
 void draw_hud_element_internal(s32 id, s32 clipMode);
 void hud_element_draw_clipped(s32 id);

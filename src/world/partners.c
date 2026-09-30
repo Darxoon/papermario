@@ -164,10 +164,10 @@ s16 D_800F8038 = 0;
 s16 D_800F803A = 0;
 
 WorldPartner wPartners[] = {
-    [PARTNER_NONE] {
+    [PARTNER_NONE] = {
         // blank
     },
-    [PARTNER_GOOMBARIO] {
+    [PARTNER_GOOMBARIO] = {
         .dmaStart = &world_partner_goombario_ROM_START,
         .dmaEnd = &world_partner_goombario_ROM_END,
         .dmaDest = &world_partner_goombario_VRAM,
@@ -182,7 +182,7 @@ WorldPartner wPartners[] = {
         .canPlayerOpenMenus = world_goombario_can_open_menus,
         .preBattle = world_goombario_pre_battle,
     },
-    [PARTNER_KOOPER] {
+    [PARTNER_KOOPER] = {
         .dmaStart = &world_partner_kooper_ROM_START,
         .dmaEnd = &world_partner_kooper_ROM_END,
         .dmaDest = &world_partner_kooper_VRAM,
@@ -199,7 +199,7 @@ WorldPartner wPartners[] = {
         .preBattle = world_kooper_pre_battle,
         .postBattle = world_kooper_post_battle,
     },
-    [PARTNER_BOMBETTE] {
+    [PARTNER_BOMBETTE] = {
         .dmaStart = &world_partner_bombette_ROM_START,
         .dmaEnd = &world_partner_bombette_ROM_END,
         .dmaDest = &world_partner_bombette_VRAM,
@@ -215,7 +215,7 @@ WorldPartner wPartners[] = {
         .canPlayerOpenMenus = world_bombette_can_open_menus,
         .preBattle = world_bombette_pre_battle,
     },
-    [PARTNER_PARAKARRY] {
+    [PARTNER_PARAKARRY] = {
         .dmaStart = &world_partner_parakarry_ROM_START,
         .dmaEnd = &world_partner_parakarry_ROM_END,
         .dmaDest = &world_partner_parakarry_VRAM,
@@ -230,7 +230,7 @@ WorldPartner wPartners[] = {
         .preBattle = world_parakarry_pre_battle,
         .postBattle = world_parakarry_post_battle,
     },
-    [PARTNER_GOOMPA] {
+    [PARTNER_GOOMPA] = {
         .dmaStart = &world_partner_goompa_ROM_START,
         .dmaEnd = &world_partner_goompa_ROM_END,
         .dmaDest = &world_partner_goompa_VRAM,
@@ -242,7 +242,7 @@ WorldPartner wPartners[] = {
         .putAway = &EVS_WorldGoompa_PutAway,
         .idle = ANIM_Goompa_Idle,
     },
-    [PARTNER_WATT] {
+    [PARTNER_WATT] = {
         .dmaStart = &world_partner_watt_ROM_START,
         .dmaEnd = &world_partner_watt_ROM_END,
         .dmaDest = &world_partner_watt_VRAM,
@@ -258,7 +258,7 @@ WorldPartner wPartners[] = {
         .postBattle = world_watt_post_battle,
         .onEnterMap = &EVS_WorldWatt_EnterMap,
     },
-    [PARTNER_SUSHIE] {
+    [PARTNER_SUSHIE] = {
         .dmaStart = &world_partner_sushie_ROM_START,
         .dmaEnd = &world_partner_sushie_ROM_END,
         .dmaDest = &world_partner_sushie_VRAM,
@@ -274,7 +274,7 @@ WorldPartner wPartners[] = {
         .postBattle = world_sushie_post_battle,
         .onEnterMap = &EVS_WorldSushie_EnterMap,
     },
-    [PARTNER_LAKILESTER] {
+    [PARTNER_LAKILESTER] = {
         .dmaStart = &world_partner_lakilester_ROM_START,
         .dmaEnd = &world_partner_lakilester_ROM_END,
         .dmaDest = &world_partner_lakilester_VRAM,
@@ -290,7 +290,7 @@ WorldPartner wPartners[] = {
         .postBattle = world_lakilester_post_battle,
         .onEnterMap = &EVS_WorldLakilester_EnterMap,
     },
-    [PARTNER_BOW] {
+    [PARTNER_BOW] = {
         .dmaStart = &world_partner_bow_ROM_START,
         .dmaEnd = &world_partner_bow_ROM_END,
         .dmaDest = &world_partner_bow_VRAM,
@@ -305,7 +305,7 @@ WorldPartner wPartners[] = {
         .canPlayerOpenMenus = world_partner_can_open_menus_default,
         .preBattle = world_bow_pre_battle,
     },
-    [PARTNER_GOOMBARIA] {
+    [PARTNER_GOOMBARIA] = {
         .dmaStart = &world_partner_goombaria_ROM_START,
         .dmaEnd = &world_partner_goombaria_ROM_END,
         .dmaDest = &world_partner_goombaria_VRAM,
@@ -319,7 +319,7 @@ WorldPartner wPartners[] = {
         .canUseAbility = partner_is_idle,
         .canPlayerOpenMenus = partner_is_idle,
     },
-    [PARTNER_TWINK] {
+    [PARTNER_TWINK] = {
         .dmaStart = &world_partner_twink_ROM_START,
         .dmaEnd = &world_partner_twink_ROM_END,
         .dmaDest = &world_partner_twink_VRAM,
@@ -340,10 +340,10 @@ f32 wSavedPartnerPosY = 0;
 f32 wSavedPartnerPosZ = 0;
 
 PartnerAnimations gPartnerAnimations[] = {
-    [PARTNER_NONE] {
+    [PARTNER_NONE] = {
         // blank
     },
-    [PARTNER_GOOMBARIO] {{
+    [PARTNER_GOOMBARIO] = {{
         ANIM_WorldGoombario_Still,
         ANIM_WorldGoombario_Walk,
         ANIM_WorldGoombario_Jump,
@@ -354,7 +354,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldGoombario_Talk,
         ANIM_WorldGoombario_Hurt
     }},
-    [PARTNER_KOOPER] {{
+    [PARTNER_KOOPER] = {{
         ANIM_WorldKooper_Still,
         ANIM_WorldKooper_Walk,
         ANIM_WorldKooper_Jump,
@@ -365,7 +365,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldKooper_Talk,
         ANIM_WorldKooper_Hurt
     }},
-    [PARTNER_BOMBETTE] {{
+    [PARTNER_BOMBETTE] = {{
         ANIM_WorldBombette_Still,
         ANIM_WorldBombette_Walk,
         ANIM_WorldBombette_Jump,
@@ -376,7 +376,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldBombette_Talk,
         ANIM_WorldBombette_Hurt
     }},
-    [PARTNER_PARAKARRY] {{
+    [PARTNER_PARAKARRY] = {{
         ANIM_WorldParakarry_Still,
         ANIM_WorldParakarry_Walk,
         ANIM_WorldParakarry_FlyFast,
@@ -387,7 +387,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldParakarry_Talk,
         ANIM_WorldParakarry_Hurt
     }},
-    [PARTNER_GOOMPA] {{
+    [PARTNER_GOOMPA] = {{
         ANIM_Goompa_Still,
         ANIM_Goompa_Walk,
         ANIM_Goompa_Jump,
@@ -398,7 +398,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_Goompa_Talk,
         ANIM_Goompa_Idle
     }},
-    [PARTNER_WATT] {{
+    [PARTNER_WATT] = {{
         ANIM_WorldWatt_Still,
         ANIM_WorldWatt_Walk,
         ANIM_WorldWatt_Walk,
@@ -409,7 +409,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldWatt_Talk,
         ANIM_WorldWatt_Hurt
     }},
-    [PARTNER_SUSHIE] {{
+    [PARTNER_SUSHIE] = {{
         ANIM_WorldSushie_Still,
         ANIM_WorldSushie_Walk,
         ANIM_WorldSushie_Walk,
@@ -420,7 +420,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldSushie_Talk,
         ANIM_WorldSushie_Hurt
     }},
-    [PARTNER_LAKILESTER] {{
+    [PARTNER_LAKILESTER] = {{
         ANIM_WorldLakilester_Still,
         ANIM_WorldLakilester_Walk,
         ANIM_WorldLakilester_Walk,
@@ -431,7 +431,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldLakilester_Talk,
         ANIM_WorldLakilester_TiredTalk
     }},
-    [PARTNER_BOW] {{
+    [PARTNER_BOW] = {{
         ANIM_WorldBow_Still,
         ANIM_WorldBow_Walk,
         ANIM_WorldBow_Walk,
@@ -442,7 +442,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_WorldBow_Talk,
         ANIM_WorldBow_Flail
     }},
-    [PARTNER_GOOMBARIA] {{
+    [PARTNER_GOOMBARIA] = {{
         ANIM_Goombaria_Still,
         ANIM_Goombaria_Walk,
         ANIM_Goombaria_Jump,
@@ -453,7 +453,7 @@ PartnerAnimations gPartnerAnimations[] = {
         ANIM_Goombaria_Talk,
         ANIM_Goombaria_Idle
     }},
-    [PARTNER_TWINK] {{
+    [PARTNER_TWINK] = {{
         ANIM_Twink_Still,
         ANIM_Twink_Idle,
         ANIM_Twink_Idle,

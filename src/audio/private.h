@@ -11,26 +11,26 @@ void au_load_BK_headers(AuGlobals* arg0, ALHeap*);
 // ----------------------------------------------------------------------------------
 // mseq_player.c
 // ----------------------------------------------------------------------------------
-void au_mseq_manager_init(AmbienceManager* arg0, s8 arg1, s8 reverbType, AuGlobals* arg3);
-AuResult au_mseq_check_player_index(u32 arg0);
+void au_mseq_manager_init(AmbienceManager* manager, s8 priority, s8 busID, AuGlobals* globals);
+AuResult au_mseq_check_player_index(u32 index);
 void au_mseq_load_tracks_fade(s32 arg0, s32 arg1);
-void au_mseq_set_disabled(s32 arg0, s32 arg1);
-AuResult au_mseq_start(s32 arg0, s32 arg1);
-void au_mseq_fade_setup(AmbiencePlayer* arg0);
-void au_mseq_pause(s32 arg0, s32 arg1);
-void au_mseq_resume(s32 arg0, s32 arg1);
-void au_mseq_stop_quick(s32 arg0);
-void au_mseq_stop_slow(s32 arg0, s32 arg1);
-void au_mseq_set_volume(s32 arg0, s32 arg1, s32 arg2);
-AuResult au_mseq_check_stopped(s32 arg0);
-void au_mseq_play_sequence(AmbienceManager* arg0, MSEQHeader* mseq, s32 index);
-void au_mseq_manager_audio_frame_update(AmbienceManager* arg0);
-void au_mseq_load_track_fade_info(AmbienceManager* manager, AmbiencePlayer* lambda);
-void au_mseq_player_update(AmbienceManager* manager, AmbiencePlayer* lambda);
-u8 au_mseq_read_next(AmbiencePlayer* arg0);
-void au_mseq_player_stop(AmbienceManager* arg0, AmbiencePlayer* arg1);
-void au_mseq_save_voices(AmbienceManager* arg0, AmbiencePlayer* lambda);
-void au_mseq_restore_voices(AmbienceManager* manager, AmbiencePlayer* lambda);
+void au_mseq_set_disabled(s32 index, s32 disable);
+AuResult au_mseq_start(s32 index, s32 time);
+void au_mseq_fade_setup(AmbiencePlayer* player);
+void au_mseq_pause(s32 index, s32 time);
+void au_mseq_resume(s32 index, s32 time);
+void au_mseq_stop_quick(s32 index);
+void au_mseq_stop_slow(s32 index, s32 time);
+void au_mseq_set_volume(s32 index, s32 time, s32 volume);
+AuResult au_mseq_check_stopped(s32 index);
+void au_mseq_play_sequence(AmbienceManager* manager, MSEQHeader* mseqFile, s32 index);
+void au_mseq_manager_audio_frame_update(AmbienceManager* manager);
+void au_mseq_load_track_fade_info(AmbienceManager* manager, AmbiencePlayer* player);
+void au_mseq_player_update(AmbienceManager* manager, AmbiencePlayer* player);
+u8 au_mseq_read_next(AmbiencePlayer* player);
+void au_mseq_player_stop(AmbienceManager* manager, AmbiencePlayer* player);
+void au_mseq_save_voices(AmbienceManager* manager, AmbiencePlayer* player);
+void au_mseq_restore_voices(AmbienceManager* manager, AmbiencePlayer* player);
 
 // ----------------------------------------------------------------------------------
 // sfx_player.c
@@ -55,20 +55,20 @@ AuResult au_bgm_stop_song(s32 songName);
 void au_bgm_stop_all(void);
 AuResult au_bgm_is_song_playing(s32 songName);
 bool au_bgm_player_is_active(BGMPlayer* player);
-AuResult au_bgm_process_fade_out(SongFadeOutRequest* s);
+AuResult au_bgm_process_fade_out(SongFadeOutRequest* request);
 AuResult au_bgm_complete_push(s32 songName);
-AuResult au_bgm_process_suspend(SongSuspendRequest* update, bool skipStop);
-AuResult au_bgm_process_resume(SongResumeRequest* update);
+AuResult au_bgm_process_suspend(SongSuspendRequest* request, bool skipStop);
+AuResult au_bgm_process_resume(SongResumeRequest* request);
 void au_bgm_restore_copied_player(AuGlobals* globals);
-AuResult au_bgm_adjust_volume(SongStartRequest* update);
-void au_bgm_player_init(BGMPlayer* player, s32 arg1, s32 arg2, AuGlobals* arg3);
+AuResult au_bgm_adjust_volume(SongStartRequest* request);
+void au_bgm_player_init(BGMPlayer* player, s32 priority, s32 busID, AuGlobals* globals);
 void au_bgm_set_effect_indices(BGMPlayer* player, u8* list);
 void au_bgm_update_fade(BGMPlayer* player);
-void au_bgm_update_bus_volumes(BGMPlayer* arg0);
+void au_bgm_update_bus_volumes(BGMPlayer* player);
 s32 au_bgm_player_audio_frame_update(BGMPlayer* player);
 void au_bgm_player_initialize(BGMPlayer* player);
-void au_bgm_clear_custom_note_press(BGMPlayer* player, s32 arg1);
-void au_bgm_set_tick_resolution(BGMPlayer* player, s32 sampleRate, u32 resolution);
+void au_bgm_clear_custom_note_press(BGMPlayer* player, s32 index);
+void au_bgm_set_tick_resolution(BGMPlayer* player, s32 mBeatsPerMinute, u32 ticksPerBeat);
 void au_bgm_player_read_composition(BGMPlayer* player);
 void au_bgm_end_composition_loop(BGMPlayer* player, u32 cmd);
 void au_bgm_load_phrase(BGMPlayer* player, u32 cmd);
@@ -103,13 +103,13 @@ void au_BGMCmd_FC_Branch(BGMPlayer* player, BGMPlayerTrack* track);
 void au_BGMCmd_FF_Special(BGMPlayer* player, BGMPlayerTrack* track);
 void au_BGMCmd_NOP(BGMPlayer* player, BGMPlayerTrack* track);
 void au_bgm_set_proximity_mix(s32 songName, u32 mix);
-void au_bgm_set_playback_rate(BGMPlayer* player, f32 arg1);
-void au_bgm_player_set_detune(BGMPlayer* player, s32 arg1);
-void au_bgm_change_track_volume(BGMPlayer* player, s32 trackIdx, s16 arg2, u8 arg3);
-void au_bgm_set_track_volumes(BGMPlayer* player, u8* arg1, s32 arg2);
+void au_bgm_set_playback_rate(BGMPlayer* player, f32 rate);
+void au_bgm_player_set_detune(BGMPlayer* player, s32 detune);
+void au_bgm_change_track_volume(BGMPlayer* player, s32 trackIdx, s16 time, u8 volume);
+void au_bgm_set_track_volumes(BGMPlayer* player, u8* trackVols, s32 mode);
 void au_bgm_set_prox_mix_fade(BGMPlayer* player, BGMPlayerTrack* track, s32 target, s32 duration);
 void au_bgm_reset_all_voices(BGMPlayer* player);
-AuResult au_bgm_set_linked_tracks(SongSwapLinkedRequest* arg0);
+AuResult au_bgm_set_linked_tracks(SongSwapLinkedRequest* request);
 
 // ----------------------------------------------------------------------------------
 // snd_interface.c
@@ -160,16 +160,16 @@ AuResult snd_song_set_volume_quiet(s32 songName);
 AuResult snd_song_set_volume_full(s32 songName);
 AuResult snd_song_set_linked_mode(s32 songName, bool mode);
 */
-AuResult snd_song_get_playing_info(s32 songName, BGMHeader** outTrackData, BGMPlayer** outPlayer);
+AuResult snd_song_get_playing_info(s32 songName, BGMHeader** outFile, BGMPlayer** outPlayer);
 /*
 AuResult snd_song_set_playback_rate(s32 songName, f32 arg1);
 */
-AuResult snd_song_set_detune(s32 songName, s32 arg1);
-AuResult snd_song_set_track_volumes(s32 songName, MusicTrackVols arg1);
-AuResult snd_song_clear_track_volumes(s32 songName, MusicTrackVols arg1);
-AuResult snd_song_set_track_vol_mute(s32 arg0, s32 arg1);
-AuResult snd_song_set_track_vol_quiet(s32 arg0, s32 arg1);
-AuResult snd_song_set_track_vol_full(s32 arg0, s32 arg1);
+AuResult snd_song_set_detune(s32 songName, s32 detune);
+AuResult snd_song_set_track_volumes(s32 songName, MusicTrackVols trackVolSet);
+AuResult snd_song_clear_track_volumes(s32 songName, MusicTrackVols trackVolSet);
+AuResult snd_song_set_track_vol_mute(s32 songName, s32 trackIdx);
+AuResult snd_song_set_track_vol_quiet(s32 songName, s32 trackIdx);
+AuResult snd_song_set_track_vol_full(s32 songName, s32 trackIdx);
 void snd_song_set_proximity_mix_far(s32 songName, s32 mix);
 void snd_song_set_proximity_mix_near(s32 songName, s32 mix);
 void snd_song_set_proximity_mix_full(s32 songName, s32 mix);

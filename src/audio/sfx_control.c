@@ -650,7 +650,7 @@ void sfx_compute_spatialized_sound_params_with_depth(f32 x, f32 y, f32 z, s16* v
         screenX = camera->viewportW;
     }
 
-    depth = fabsf(5000 - screenZ);
+    depth = fabsf((float)(5000 - screenZ));
     if (depth > 1000.0f) {
         depth = 1000.0f;
     }

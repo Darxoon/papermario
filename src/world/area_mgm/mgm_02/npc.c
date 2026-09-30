@@ -756,6 +756,8 @@ API_CALLABLE(N(RunMinigame)) {
                     break;
                 case BOX_STATE_PEACH_DONE:
                     break;
+                default:
+                    break;
             }
         } else {
             if (data->box[i].state == BOX_STATE_EMPTY_INIT) {

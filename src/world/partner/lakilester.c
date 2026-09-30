@@ -51,7 +51,7 @@ enum {
     MOUNT_STATE_DONE            = 2,
 };
 
-void N(offset_player_from_camera)(f32 arg0);
+void N(offset_player_from_camera)(f32 speed);
 
 void N(sync_player_position)(void) {
     PlayerStatus* playerStatus = &gPlayerStatus;

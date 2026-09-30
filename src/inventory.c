@@ -175,7 +175,7 @@ s32 get_item_count(void) {
     s32 i = 0;
     s32 sum = 0;
 
-    for (i; i < ARRAY_COUNT(gPlayerData.invItems); i++) {
+    for (; i < ARRAY_COUNT(gPlayerData.invItems); i++) {
         if (playerData->invItems[i] != ITEM_NONE) {
             sum++;
         }

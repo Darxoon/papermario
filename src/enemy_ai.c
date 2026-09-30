@@ -449,7 +449,7 @@ bool basic_ai_check_player_dist(EnemyDetectVolume* territory, Enemy* enemy, f32 
         return false;
     }
 
-    if ((playerStatus->actionState == ACTION_STATE_USE_SPINNING_FLOWER)) {
+    if (playerStatus->actionState == ACTION_STATE_USE_SPINNING_FLOWER) {
         return false;
     }
 

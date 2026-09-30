@@ -49,63 +49,63 @@ SimpleWindowUpdateData gSimpleWindowUpdates[] = {
         .darkening = 0,
         .opacity = 0
     },
-    [WINDOW_UPDATE_SHOW] {
+    [WINDOW_UPDATE_SHOW] = {
         .flags = 0,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_HIDDEN | WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 0
     },
-    [WINDOW_UPDATE_HIDE] {
+    [WINDOW_UPDATE_HIDE] = {
         .flags = 0,
         .windowFlagsSet = WINDOW_FLAG_HIDDEN,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 0
     },
-    [WINDOW_UPDATE_HIER_UPDATE] {
+    [WINDOW_UPDATE_HIER_UPDATE] = {
         .flags = SIMPLE_WINDOW_UPDATE_1,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 0
     },
-    [WINDOW_UPDATE_DARKENED] {
+    [WINDOW_UPDATE_DARKENED] = {
         .flags = SIMPLE_WINDOW_UPDATE_DARKENING,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 100,
         .opacity = 0
     },
-    [WINDOW_UPDATE_TRANSPARENT] {
+    [WINDOW_UPDATE_TRANSPARENT] = {
         .flags = SIMPLE_WINDOW_UPDATE_DARKENING,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 0
     },
-    [WINDOW_UPDATE_OPAQUE] {
+    [WINDOW_UPDATE_OPAQUE] = {
         .flags = SIMPLE_WINDOW_UPDATE_OPACITY,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 184
     },
-    [WINDOW_UPDATE_SHOW_TRANSPARENT] {
+    [WINDOW_UPDATE_SHOW_TRANSPARENT] = {
         .flags = SIMPLE_WINDOW_UPDATE_OPACITY,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 255
     },
-    [WINDOW_UPDATE_SHOW_DARKENED] {
+    [WINDOW_UPDATE_SHOW_DARKENED] = {
         .flags = SIMPLE_WINDOW_UPDATE_OPACITY,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_HIDDEN | WINDOW_FLAG_INITIAL_ANIMATION,
         .darkening = 0,
         .opacity = 184
     },
-    [WINDOW_UPDATE_9] {
+    [WINDOW_UPDATE_9] = {
         .flags = SIMPLE_WINDOW_UPDATE_DARKENING,
         .windowFlagsSet = 0,
         .windowFlagsUnset = WINDOW_FLAG_HIDDEN | WINDOW_FLAG_INITIAL_ANIMATION,
@@ -378,7 +378,8 @@ void render_window_root(void) {
     render_windows(priorityArray, WIN_NONE, 0, 0, 0, 255, 0, nullptr);
 }
 
-void set_window_properties(s32 windowID, s32 posX, s32 posY, s32 width, s32 height, u8 priority, void* fpDrawContents, void* drawContentsArg0, s8 parent) {
+void set_window_properties(s32 windowID, s32 posX, s32 posY, s32 width, s32 height, u8 priority,
+                        void* fpDrawContents, void* drawContentsArg0, s8 parent) {
     Window* window = &gWindows[windowID];
     u8 priorityCopy = priority;
 

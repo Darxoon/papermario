@@ -423,7 +423,10 @@ extern EncounterStatus gCurrentEncounter;
 
 #endif
 
-bool basic_ai_check_player_dist(EnemyDetectVolume* arg0, Enemy* arg1, f32 arg2, f32 arg3, s8 arg4);
+bool basic_ai_check_player_dist(EnemyDetectVolume* territory, Enemy* enemy, f32 radius, f32 fwdPosOffset, s8 useWorldYaw);
+
+s32 ai_check_player_dist(Enemy* enemy, s32 chance, f32 radius, f32 moveSpeed);
+void ai_enemy_play_sound(Npc* npc, s32 soundID, s32 upperSoundFlags);
 
 /// The default Npc::onUpdate and Npc::onRender callback.
 void STUB_npc_callback(Npc*);
