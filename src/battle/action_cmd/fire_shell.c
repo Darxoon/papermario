@@ -1,5 +1,6 @@
 #include "battle/battle.h"
 #include "battle/action_cmd.h"
+#include "audio/public.h"
 
 #define NAMESPACE action_command_fire_shell
 

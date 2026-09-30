@@ -1,4 +1,5 @@
 #include "obk_08.h"
+#include "audio/public.h"
 
 enum {
     RING_STATE_0        = 0,

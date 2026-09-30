@@ -1,5 +1,6 @@
 #include "common.h"
 #include "model.h"
+#include "audio/public.h"
 
 #ifndef ROCKING_CHAIR_CENTER_X
 #error ROCKING_CHAIR_CENTER_X is not defined!

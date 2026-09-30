@@ -1,6 +1,7 @@
 #include "mac_06.h"
 #include "model.h"
 #include "effects.h"
+#include "audio/public.h"
 
 #define CLONED_MODEL_GULL   CLONED_MODEL(1000)
 #define CLONED_MODEL_UNUSED CLONED_MODEL(0)

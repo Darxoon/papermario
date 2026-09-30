@@ -2,6 +2,7 @@
 #include "entity.h"
 #include "animation_script.h"
 #include "ld_addrs.h"
+#include "audio/public.h"
 
 extern StaticAnimatorNode* Entity_ScriptSpring_Mesh[];
 extern AnimScript Entity_ScriptSpring_AnimLaunch;

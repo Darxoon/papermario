@@ -3,6 +3,7 @@
 #include "battle/battle.h"
 #include "sprite.h"
 #include "game_modes.h"
+#include "audio/public.h"
 
 typedef struct DemoSceneData {
     /* 0x0 */ s16 sceneType;

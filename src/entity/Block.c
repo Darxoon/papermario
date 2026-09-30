@@ -2,6 +2,7 @@
 #include "effects.h"
 #include "ld_addrs.h"
 #include "entity.h"
+#include "audio/public.h"
 
 extern Gfx Entity_InertYellowBlock_Render[];
 extern Gfx Entity_InertRedBlock_Render[];

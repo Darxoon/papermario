@@ -1,4 +1,5 @@
 #include "common.h"
+#include "audio/public.h"
 
 // ----------------------------------------------------------------
 // Requirements

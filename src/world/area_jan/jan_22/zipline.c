@@ -1,5 +1,6 @@
 #include "jan_22.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(Zipline_AdjustMoveDownSound)) {
     Bytecode* args = script->ptrReadPos;

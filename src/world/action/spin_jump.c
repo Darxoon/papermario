@@ -1,5 +1,6 @@
 #include "common.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 enum {
     SUBSTATE_SPIN           = 0,

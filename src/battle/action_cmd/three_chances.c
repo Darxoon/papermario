@@ -1,6 +1,7 @@
 #include "common.h"
 #include "battle/action_cmd.h"
 #include "include_asset.h"
+#include "audio/public.h"
 
 #define NAMESPACE action_command_three_chances
 

@@ -10,6 +10,7 @@
 #include "boss_common.h"
 #include "mapfs/kzn_bt05_shape.h"
 #include "include_asset.h"
+#include "audio/public.h"
 
 #define NAMESPACE A(lava_piranha)
 

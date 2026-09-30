@@ -10,6 +10,7 @@
 #include "sprite/npc/WorldWatt.h"
 #include "sprite/npc/WorldSushie.h"
 #include "sprite/npc/WorldLakilester.h"
+#include "audio/public.h"
 
 extern s8 gPauseBufferPal1[512];
 extern s8 gPauseBufferImg1[15752];

@@ -1,8 +1,8 @@
 #include "battle/battle.h"
 #include "script_api/battle.h"
 #include "effects.h"
-#include "hud_element.h"
 #include "sprite.h"
+#include "audio/public.h"
 
 s32 has_enchanted_part(Actor* actor) {
     ActorPart* partIt = actor->partsTable;

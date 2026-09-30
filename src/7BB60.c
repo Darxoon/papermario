@@ -1,6 +1,6 @@
 #include "common.h"
-#include "world/partners.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 CollisionStatus gCollisionStatus;
 f32 D_8010C928;

@@ -6,6 +6,7 @@
 #include "battle/action_cmd/air_lift.h"
 #include "battle/action_cmd/air_raid.h"
 #include "sprite/npc/BattleParakarry.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_partner_parakarry
 

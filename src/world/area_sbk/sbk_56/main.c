@@ -1,5 +1,6 @@
 
 #include "sbk_56.h"
+#include "audio/public.h"
 
 extern EvtScript N(EVS_Main);
 extern EvtScript N(EVS_MakeEntities);

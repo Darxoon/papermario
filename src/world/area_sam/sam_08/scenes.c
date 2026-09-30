@@ -1,4 +1,5 @@
 #include "sam_08.h"
+#include "audio/public.h"
 
 #include "world/common/todo/PlayBigSmokePuff.inc.c"
 

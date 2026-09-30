@@ -8,6 +8,7 @@
 #include "battle/action_cmd/flee.h"
 #include "battle/battle.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 extern HudScript HES_Happy;
 extern HudScript HES_HPDrain;

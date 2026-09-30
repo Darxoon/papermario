@@ -2,6 +2,7 @@
 #include "model.h"
 #include "evt.h"
 #include "game_modes.h"
+#include "audio/public.h"
 
 extern LavaReset* gLavaResetList;
 extern s32 LastSafeFloor;

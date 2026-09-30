@@ -1,5 +1,6 @@
 #include "kzn_06.h"
 #include "model.h"
+#include "audio/public.h"
 
 #include "../common/LavaGlowLighting.inc.c"
 

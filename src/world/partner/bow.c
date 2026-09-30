@@ -3,6 +3,7 @@
 #include "npc.h"
 #include "sprite/npc/WorldBow.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE world_bow
 

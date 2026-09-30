@@ -1,4 +1,5 @@
 #include "kpa_16.h"
+#include "audio/public.h"
 
 #include "world/common/enemy/Koopatrol.h"
 #include "world/common/enemy/Magikoopa.h"

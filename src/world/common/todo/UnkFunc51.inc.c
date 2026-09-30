@@ -1,5 +1,5 @@
-#include "common.h"
-#include "npc.h"
+#include "functions.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(UnkFunc51)) {
     Bytecode* args = script->ptrReadPos;

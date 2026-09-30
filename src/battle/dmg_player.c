@@ -3,6 +3,7 @@
 #include "battle/battle.h"
 #include "script_api/battle.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 bool dispatch_damage_event_player(s32 damageAmount, s32 event, bool noHitSound);
 bool dispatch_hazard_event_player(s32 damageAmount, s32 event);

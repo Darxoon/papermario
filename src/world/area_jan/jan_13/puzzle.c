@@ -2,6 +2,7 @@
 #include "entity.h"
 #include "effects.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 // geyser positions in grid coordinates
 #define POS_0_I 28

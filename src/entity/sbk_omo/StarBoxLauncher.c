@@ -2,6 +2,7 @@
 #include "effects.h"
 #include "entity.h"
 #include "ld_addrs.h"
+#include "audio/public.h"
 
 extern Gfx Entity_StarBoxLauncher_RenderBottom[];
 extern Gfx Entity_StarBoxLauncher_RenderTop[];

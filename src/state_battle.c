@@ -6,6 +6,7 @@
 #include "battle/battle.h"
 #include "model.h"
 #include "game_modes.h"
+#include "audio/public.h"
 
 extern u16 gFrameBuf0[];
 extern u16 gFrameBuf1[];

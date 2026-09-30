@@ -1,6 +1,6 @@
 #include "common.h"
-#include "npc.h"
 #include "effects.h"
+#include "audio/public.h"
 
 #ifndef STAR_SPIRIT_DATA_VAR
     #error STAR_SPIRIT_DATA_VAR is not defined!

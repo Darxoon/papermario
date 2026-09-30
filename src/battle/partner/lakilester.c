@@ -8,6 +8,7 @@
 #include "battle/action_cmd/hurricane.h"
 #include "hud_element.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_partner_lakilester
 

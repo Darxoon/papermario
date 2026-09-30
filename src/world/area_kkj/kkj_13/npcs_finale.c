@@ -1,5 +1,6 @@
 #include "kkj_13.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #include "world/common/npc/Peach.h"
 

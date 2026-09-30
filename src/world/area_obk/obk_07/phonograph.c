@@ -2,6 +2,7 @@
 #include "hud_element.h"
 #include "battle/action_cmd.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 extern HudScript HES_SlowlyMashAButton;
 

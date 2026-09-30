@@ -2,6 +2,7 @@
 #include "model.h"
 #include "sprite/player.h"
 #include "include_asset.h"
+#include "audio/public.h"
 
 // cards used during Merlee's ritual
 typedef struct RitualCard {

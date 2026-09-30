@@ -1,4 +1,5 @@
 #include "tik_22.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(AdjustTrackVolumes)) {
     bgm_set_track_volumes(0, TRACK_VOLS_TIK_SHIVER);

@@ -1,6 +1,7 @@
 #include "common.h"
 #include "ld_addrs.h"
 #include "entity.h"
+#include "audio/public.h"
 
 s32 entity_HiddenPanel_is_item_on_top(Entity*);
 void entity_HiddenPanel_flip_over(Entity*);

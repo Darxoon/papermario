@@ -1,5 +1,6 @@
 #include "kmr_20.h"
 #include "entity.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(SetAmbienceVolumeHalf_Entity)){
     snd_ambient_set_volume(0, 1000, 63);

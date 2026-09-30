@@ -1,7 +1,7 @@
 #include "common.h"
-#include "npc.h"
 #include "ld_addrs.h"
 #include "entity.h"
+#include "audio/public.h"
 
 extern Gfx Entity_RenderNone[];
 extern Gfx Entity_WoodenCrate_Render[];

@@ -1,5 +1,6 @@
 #include "common.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 extern s32 gSpinHistoryBufferPos;
 extern s32 gSpinHistoryPosY[5];

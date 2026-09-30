@@ -1,6 +1,7 @@
 #include "common.h"
 #include "effects.h"
 #include "nu/nusys.h"
+#include "audio/public.h"
 
 u32 effect_prng_seed = 0x1E6D3457;
 

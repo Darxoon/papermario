@@ -1,5 +1,6 @@
 #include "pause_common.h"
 #include "message_ids.h"
+#include "audio/public.h"
 
 #if VERSION_PAL
 extern u8 D_PAL_80271B30[4];

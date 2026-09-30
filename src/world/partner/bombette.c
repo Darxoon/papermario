@@ -3,6 +3,7 @@
 #include "effects.h"
 #include "sprite/npc/WorldBombette.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE world_bombette
 

@@ -6,6 +6,7 @@
 #include "sprite/npc/Goombaria.h"
 #include "sprite/npc/WorldGoombario.h"
 #include "sprite/npc/Goompa.h"
+#include "audio/public.h"
 
 extern MenuPanel gPausePanelTabs;
 extern MenuPanel gPausePanelStats;

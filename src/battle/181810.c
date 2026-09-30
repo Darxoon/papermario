@@ -1,5 +1,6 @@
 #include "functions.h"
 #include "variables.h"
+#include "audio/public.h"
 #include "battle/actor_types.h"
 #include "battle/battle.h"
 

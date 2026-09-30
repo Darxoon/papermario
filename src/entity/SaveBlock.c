@@ -3,6 +3,7 @@
 #include "ld_addrs.h"
 #include "entity.h"
 #include "message_ids.h"
+#include "audio/public.h"
 
 extern Mtx Entity_SaveBlock_Mtx;
 extern Gfx Entity_SaveBlock_RenderContent[];

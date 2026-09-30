@@ -1,6 +1,7 @@
 #include "common.h"
 #include "filemenu.h"
 #include "hud_element.h"
+#include "audio/public.h"
 
 extern HudScript HES_FilenameCaret;
 extern HudScript HES_FilenameSpace;

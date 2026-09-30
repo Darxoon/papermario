@@ -1,11 +1,10 @@
 // this file and world/actions.c are candidates for merging
 
 #include "common.h"
-#include "world/partners.h"
 #include "world/actions.h"
 #include "npc.h"
 #include "effects.h"
-#include "ld_addrs.h"
+#include "audio/public.h"
 
 #ifdef SHIFT
 extern Addr world_action_CLASS_VRAM;

@@ -3,6 +3,7 @@
 #include "sprite/npc/WorldKooper.h"
 #include "sprite/player.h"
 #include "effects.h"
+#include "audio/public.h"
 
 #define NAMESPACE world_kooper
 

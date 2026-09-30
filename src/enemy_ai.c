@@ -1,6 +1,7 @@
 #include "common.h"
 #include "npc.h"
 #include "effects.h"
+#include "audio/public.h"
 
 extern s32 gLastRenderTaskCount;
 

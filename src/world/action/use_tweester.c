@@ -2,6 +2,7 @@
 #include "../partners.h"
 #include "npc.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 BSS TweesterPhysics PlayerTweesterPhysicsData;
 TweesterPhysics* PlayerTweesterPhysicsPtr = &PlayerTweesterPhysicsData;

@@ -2,9 +2,8 @@
 #include "script_api/battle.h"
 #include "effects.h"
 #include "entity.h"
-#include "ld_addrs.h"
-#include "sprite/player.h"
 #include "include_asset.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_item_insecticide_herb
 

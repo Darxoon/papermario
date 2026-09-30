@@ -1,5 +1,6 @@
 #include "common.h"
 #include "entity.h"
+#include "audio/public.h"
 
 f32 N(PushBlockFallCurve)[] = {
     0.02, 0.02, 0.04, 0.08, 0.11, 0.2, 0.3, 0.31,

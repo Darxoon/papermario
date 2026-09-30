@@ -6,8 +6,8 @@
 #include "sprite.h"
 #include "game_modes.h"
 #include "pause/pause_common.h"
-#include "world/partners.h"
 #include "world/partner/lakilester.h"
+#include "audio/public.h"
 
 enum WorldMenuStates {
     WORLD_MENU_STATE_NONE       = 0,

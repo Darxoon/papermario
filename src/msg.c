@@ -1,7 +1,7 @@
 #include "common.h"
 #include "ld_addrs.h"
 #include "message_ids.h"
-#include "sprite.h"
+#include "audio/public.h"
 
 #include "charset/charset.h"
 #include "charset/postcard.png.h"

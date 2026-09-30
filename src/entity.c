@@ -3,6 +3,7 @@
 #include "entity.h"
 #include "model.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #ifdef SHIFT
 extern Addr WorldEntityHeapBottom;

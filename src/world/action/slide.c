@@ -1,5 +1,6 @@
 #include "common.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 BSS f32 SlideAcceleration;
 BSS f32 MaxSlideAccel;

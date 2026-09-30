@@ -1,5 +1,6 @@
 #include "common.h"
 #include "battle/action_cmd.h"
+#include "audio/public.h"
 
 /**
  * The player must mash A to fill up a meter.

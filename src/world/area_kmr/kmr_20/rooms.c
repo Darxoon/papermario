@@ -1,4 +1,5 @@
 #include "kmr_20.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(SetAmbienceVolumeHalf_Rooms)){
     snd_ambient_set_volume(0, 1000, 63);

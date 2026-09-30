@@ -8,6 +8,7 @@
 #include "sprite/npc/WorldMisstar.h"
 #include "sprite/npc/WorldKlevar.h"
 #include "sprite/npc/WorldKalmar.h"
+#include "audio/public.h"
 
 extern Gfx PauseGfxSpiritsBg[];
 extern s8 pause_spirits_bg_png[];

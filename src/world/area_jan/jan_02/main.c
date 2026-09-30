@@ -1,5 +1,6 @@
 #include "jan_02.h"
 #include "effects.h"
+#include "audio/public.h"
 
 #include "world/common/atomic/TexturePan.inc.c"
 

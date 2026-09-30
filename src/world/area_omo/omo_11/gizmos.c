@@ -1,5 +1,6 @@
 #include "omo_11.h"
 #include "model.h"
+#include "audio/public.h"
 
 s32 N(PlatformFloorModels)[] = {
     MODEL_1_1,

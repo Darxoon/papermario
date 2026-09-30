@@ -1,5 +1,5 @@
 #include "mac_05.h"
-#include "sprite/player.h"
+#include "audio/public.h"
 
 void increment_max_star_power(void);
 

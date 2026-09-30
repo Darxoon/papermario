@@ -3,6 +3,7 @@
 #include "sprite.h"
 #include "world/partners.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 extern PlayerStatus gPlayerStatus;
 extern PlayerData gPlayerData;

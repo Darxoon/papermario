@@ -1,5 +1,6 @@
 #include "common.h"
 #include "ld_addrs.h"
+#include "audio/public.h"
 
 u8 mashMeter_bgColors[15] = {
      33,  33, 117,

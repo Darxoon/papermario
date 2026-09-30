@@ -1,5 +1,6 @@
 #include "common.h"
 #include "model.h"
+#include "audio/public.h"
 
 void func_800EF414(s32, s32);
 void get_flat_collider_normal(s32, f32*, f32*, f32*);

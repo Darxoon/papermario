@@ -1,6 +1,7 @@
 #include "common_structs.h"
 #include "partners.h"
 #include "macros.h"
+#include "audio/public.h"
 
 #include "ld_addrs.h"
 #include "npc.h"

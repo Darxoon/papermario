@@ -1,6 +1,6 @@
 #include "common.h"
 #include "script_api/battle.h"
-#include "camera.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_item_dizzy_dial
 

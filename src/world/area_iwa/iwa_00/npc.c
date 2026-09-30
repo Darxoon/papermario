@@ -1,5 +1,6 @@
 #include "iwa_00.h"
 #include "effects.h"
+#include "audio/public.h"
 
 #include "world/common/enemy/MontyMole_GroundAmbush.inc.c"
 #include "world/common/enemy/MontyMole_WallAmbush.inc.c"

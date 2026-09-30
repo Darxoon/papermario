@@ -1,4 +1,5 @@
 #include "kzn_08.h"
+#include "audio/public.h"
 
 // modified DarkRoomUpdate
 API_CALLABLE(N(func_80243EE0_C75360)) {

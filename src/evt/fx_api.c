@@ -1,5 +1,6 @@
 #include "common.h"
 #include "effects.h"
+#include "audio/public.h"
 
 void show_start_recovery_shimmer(f32 x, f32 y, f32 z, s32 amt) {
     fx_stars_shimmer(1, x, y, z, amt + 30, amt + 30, (amt / 2) + 10, 30);

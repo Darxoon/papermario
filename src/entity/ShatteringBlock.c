@@ -1,6 +1,7 @@
 #include "common.h"
 #include "ld_addrs.h"
 #include "entity.h"
+#include "audio/public.h"
 
 extern Mtx Entity_ShatteringHammer1Block_FragmentsMatrices[];
 extern Gfx* Entity_ShatteringHammer1Block_FragmentsRender[];

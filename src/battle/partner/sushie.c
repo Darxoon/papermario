@@ -7,6 +7,7 @@
 #include "battle/action_cmd/three_chances.h"
 #include "battle/action_cmd/tidal_wave.h"
 #include "sprite/npc/BattleSushie.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_partner_sushie
 

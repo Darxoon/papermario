@@ -1,4 +1,5 @@
 #include "mgm_00.h"
+#include "audio/public.h"
 
 #define MINIGAME_TYPE_JUMP      1
 #define MINIGAME_TYPE_SMASH     2

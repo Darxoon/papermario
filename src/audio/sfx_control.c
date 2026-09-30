@@ -1,5 +1,6 @@
 #include "common.h"
 #include "audio.h"
+#include "audio/public.h"
 
 #define MAX_SOUND_INSTANCES 10
 

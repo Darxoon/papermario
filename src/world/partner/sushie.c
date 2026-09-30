@@ -5,6 +5,7 @@
 #include "sprite/npc/WorldSushie.h"
 #include "sprite.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE world_sushie
 

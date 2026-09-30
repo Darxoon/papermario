@@ -1,6 +1,7 @@
 #include "../area.h"
 #include "sprite/npc/KoopaBros.h"
 #include "mapfs/trd_bt00_shape.h"
+#include "audio/public.h"
 
 #define NAMESPACE A(fake_bowser)
 

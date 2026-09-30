@@ -1,6 +1,6 @@
 #include "common.h"
 #include "script_api/battle.h"
-#include "sprite/player.h"
+#include "audio/public.h"
 
 EvtScript N(EVS_PlayBeamFX) = {
     Thread

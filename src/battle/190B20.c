@@ -5,6 +5,7 @@
 #include "script_api/battle.h"
 #include "model.h"
 #include "sprite.h"
+#include "audio/public.h"
 
 EvtScript EVS_ShakeBattleCamPitch = {
     Wait(LVar0)

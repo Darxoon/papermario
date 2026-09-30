@@ -1,5 +1,5 @@
 #include "common.h"
-#include "npc.h"
+#include "audio/public.h"
 
 /*
     The current BGM can be modified based on the player's proximity to a specified point.

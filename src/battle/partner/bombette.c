@@ -5,6 +5,7 @@
 #include "sprite/npc/BattleBombette.h"
 #include "battle/action_cmd/bomb.h"
 #include "battle/action_cmd/body_slam.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_partner_bombette
 

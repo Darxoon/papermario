@@ -1,5 +1,6 @@
 #include "pause_common.h"
 #include "message_ids.h"
+#include "audio/public.h"
 
 #if VERSION_PAL
 #define MAP_TITLE_X 36

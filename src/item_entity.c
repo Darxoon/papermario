@@ -10,6 +10,7 @@
 #include "ld_addrs.h"
 #include "sprite.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define MAX_ITEM_ENTITIES 256
 

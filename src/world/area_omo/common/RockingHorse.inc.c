@@ -1,5 +1,6 @@
 #include "common.h"
 #include "model.h"
+#include "audio/public.h"
 
 typedef struct RockingHorse {
     /* 0x00 */ f32 posX;

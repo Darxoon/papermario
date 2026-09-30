@@ -4,6 +4,7 @@
 #include "script_api/battle.h"
 #include "battle/action_cmd/jump.h"
 #include "sprite/npc/BattleGoombario.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_partner_goombario
 

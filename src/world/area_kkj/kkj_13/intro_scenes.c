@@ -2,6 +2,7 @@
 #include "effects.h"
 #include "sprite.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(UpdatePropellerSoundPos_Intro)) {
     Npc* npc = get_npc_safe(NPC_Bowser_Prop);

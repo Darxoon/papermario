@@ -1,5 +1,6 @@
 #include "common.h"
 #include "hud_element.h"
+#include "audio/public.h"
 
 #define FULLY_EXTENDED_Y  18
 #define FULLY_RETRACTED_Y -100

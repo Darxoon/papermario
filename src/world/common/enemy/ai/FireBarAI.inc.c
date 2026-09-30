@@ -2,6 +2,7 @@
 #define _AI_FIRE_BAR_INC_ 0
 
 #include "common.h"
+#include "audio/public.h"
 
 // from data
 extern s32 N(FireBar_Sounds)[11];

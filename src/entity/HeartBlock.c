@@ -3,6 +3,7 @@
 #include "message_ids.h"
 #include "ld_addrs.h"
 #include "entity.h"
+#include "audio/public.h"
 
 extern EntityModelScript Entity_HeartBlockContent_RenderScriptIdle;
 extern EntityModelScript Entity_HeartBlockContent_RenderScriptAfterHit;

@@ -1,6 +1,6 @@
 #include "flo_14.h"
 #include "effects.h"
-#include "model.h"
+#include "audio/public.h"
 
 #include "world/area_flo/common/FlowerSpawnRegion.inc.c"
 #include "world/area_flo/common/DroppingVine.inc.c"

@@ -3,6 +3,7 @@
 #include "effects.h"
 #include "model.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE battle_item_thunder_rage
 

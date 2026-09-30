@@ -1,4 +1,5 @@
 #include "common.h"
+#include "audio/public.h"
 
 API_CALLABLE(N(PlayLavaBubbleFlightSound)) {
     Actor* actor = get_actor(script->owner1.actorID);

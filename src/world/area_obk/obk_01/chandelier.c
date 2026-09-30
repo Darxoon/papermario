@@ -1,6 +1,7 @@
 #include "obk_01.h"
 #include "model.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #include "world/common/EnableCameraFollowPlayerY.inc.c"
 #include "world/common/DisableCameraFollowPlayerY.inc.c"

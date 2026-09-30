@@ -2,6 +2,7 @@
 #include "hud_element.h"
 #include "effects.h"
 #include "entity.h"
+#include "audio/public.h"
 
 #define SCOREKEEPER_ENEMY_IDX 0
 #define BROKEN_BLOCKS_VAR_IDX 2

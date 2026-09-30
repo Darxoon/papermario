@@ -1,5 +1,6 @@
 #include "common.h"
 #include "battle/action_cmd.h"
+#include "audio/public.h"
 
 #define NAMESPACE action_command_tidal_wave
 

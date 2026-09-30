@@ -2,6 +2,7 @@
 #include "hud_element.h"
 #include "ld_addrs.h"
 #include "charset/charset.h"
+#include "audio/public.h"
 
 #define PACKED_BYTE(base, i) \
     (i / 8) + EVT_INDEX_OF_GAME_BYTE(base)

@@ -1,6 +1,6 @@
 #include "common.h"
-#include "effects.h"
 #include "battle/action_cmd.h"
+#include "audio/public.h"
 
 #define NAMESPACE action_command_air_lift
 

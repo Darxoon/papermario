@@ -1,8 +1,8 @@
 #include "common.h"
 #include "../partners.h"
-#include "effects.h"
 #include "sprite/npc/WorldLakilester.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 #define NAMESPACE world_lakilester
 

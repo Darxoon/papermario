@@ -2,6 +2,7 @@
 #include "hud_element.h"
 #include "nu/nusys.h"
 #include "ld_addrs.h"
+#include "audio/public.h"
 
 #define MAX_HUD_CACHE_ENTRIES 192
 

@@ -4,6 +4,7 @@
 #include "model.h"
 #include "entity.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 void delete_entity(s32);
 void partner_enable_input(void);

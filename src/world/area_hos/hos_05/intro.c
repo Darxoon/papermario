@@ -3,6 +3,7 @@
 #include "model.h"
 #include "nu/nusys.h"
 #include "ld_addrs.h"
+#include "audio/public.h"
 
 enum {
     STORY_PAGE_BLANK        = 0,

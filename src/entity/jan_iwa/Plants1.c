@@ -5,6 +5,7 @@
 #include "ld_addrs.h"
 #include "model.h"
 #include "sprite/player.h"
+#include "audio/public.h"
 
 extern Gfx Entity_RenderNone[];
 extern AnimScript Entity_CymbalPlant_AnimationIdle;
