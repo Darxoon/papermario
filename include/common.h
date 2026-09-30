@@ -3,9 +3,9 @@
 
 #include "ultra64.h"
 #include "gbi_custom.h"
-#include "types.h"
-#include "common_structs.h"
-#include "functions.h"
+#include "types.h" // IWYU pragma: export
+#include "common_structs.h" // IWYU pragma: export
+#include "functions.h" // IWYU pragma: export
 #ifndef NO_EXTERN_VARIABLES
 #include "variables.h"
 #endif

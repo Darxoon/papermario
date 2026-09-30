@@ -24,7 +24,9 @@
 #include "va-pa.h"
 #else
 #ifdef __mips__
+#ifndef __clang__ // required for clangd
 #include "va-mips.h"
+#endif
 #else
 #ifdef __sparc__
 #include "va-sparc.h"
@@ -182,7 +184,9 @@ typedef __gnuc_va_list va_list;
 #ifndef _VA_LIST
 /* The macro _VA_LIST_T_H is used in the Bull dpx2  */
 #ifndef _VA_LIST_T_H
+#ifndef __clang__
 typedef __gnuc_va_list va_list;
+#endif /* not __clang__ */
 #endif /* not _VA_LIST_T_H */
 #endif /* not _VA_LIST */
 #endif /* not _VA_LIST_DEFINED */
