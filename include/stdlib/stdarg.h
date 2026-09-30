@@ -91,7 +91,9 @@ typedef void *__gnuc_va_list;
 
 #undef va_end
 #ifndef M2CTX
+#ifndef __clang__ // required for clangd
 void va_end (__gnuc_va_list);		/* Defined in libgcc.a */
+#endif
 #endif
 #define va_end(AP)	((void)0)
 
