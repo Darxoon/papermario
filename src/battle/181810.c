@@ -1,4 +1,6 @@
 #include "functions.h"
+#include "variables.h"
+#include "battle/actor_types.h"
 #include "battle/battle.h"
 
 BSS char D_8029F660[0x400]; // unused?

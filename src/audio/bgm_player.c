@@ -1,5 +1,7 @@
 #include "audio.h"
 #include "audio/core.h"
+#include "audio/private.h"
+#include "audio/public.h"
 
 BSS void (*CurrentSeqCmdHandler)(BGMPlayer*, BGMPlayerTrack*);
 
@@ -15,10 +17,10 @@ static void au_bgm_stop_player(BGMPlayer* player);
 
 static s32 au_bgm_bpm_to_tempo(BGMPlayer* player, u32 tempo);
 
-static u8 au_bgm_get_random_pan(BGMPlayer* player, u8 arg1, u8 arg2);
-static s16 au_bgm_get_random_pitch(s32 arg0, s32 arg1, u8 arg2);
-static u8 au_bgm_get_random_vol(s32 arg0, u8 volume, u8 arg2);
-static u8 au_bgm_get_random_reverb(s32 arg0, u8 arg1, u8 arg2);
+static u8 au_bgm_get_random_pan(BGMPlayer* player, u8 pan, u8 amplitude);
+static s16 au_bgm_get_random_pitch(s32 seed, s32 pitch, u8 amplitude);
+static u8 au_bgm_get_random_vol(s32 seed, u8 volume, u8 amplitude);
+static u8 au_bgm_get_random_reverb(s32 seed, u8 reverb, u8 amplitude);
 
 void au_bgm_begin_video_frame(BGMPlayer* player) {
     BGMHeader* bgmFile;

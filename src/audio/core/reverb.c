@@ -1,6 +1,6 @@
-#include "common.h"
 #include "audio.h"
 #include "audio/core.h"
+#include "PR/n_abi.h"
 
 #define SWAP16(in, out) \
 { \
@@ -10,7 +10,7 @@
 }
 
 static Acmd* _loadDelayLineBuffer(AuFX* fx, s16* oldPos, s32 buff, s32 count, Acmd* cmdBufPos);
-static f32 updateTriangleModulation(AuDelay* delay, s32 rsdelta);
+static f32 updateTriangleModulation(AuDelay* delay, s32 numSamples);
 
 /*
 * the following constant is derived from:

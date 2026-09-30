@@ -1,6 +1,8 @@
+#include "types.h"
 #include "audio.h"
+#include "audio/private.h"
 #include "audio/core.h"
-#include "ld_addrs.h"
+#include "audio/public.h"
 
 AuCallback BeginSoundUpdateCallback;
 BGMPlayer* gBGMPlayerA;

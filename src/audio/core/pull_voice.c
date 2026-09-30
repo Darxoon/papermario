@@ -1,5 +1,6 @@
 #include "audio.h"
 #include "audio/core.h"
+#include "PR/n_abi.h"
 
 #define LFSAMPLES       4
 #define AUEQPOWER_LENGTH 128

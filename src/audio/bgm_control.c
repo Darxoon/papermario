@@ -1,6 +1,8 @@
-#include "common.h"
-#include "npc.h"
+#include "map.h"
+#include "variables.h"
 #include "audio.h"
+#include "audio/private.h"
+#include "audio/public.h"
 
 void bgm_update_volume(void);
 void bgm_set_target_volume(s32 volume);
@@ -87,7 +89,7 @@ void bgm_update_music_control(void) {
     s16 pushedFlag = MUSIC_FLAG_PUSHING;
     s32 flags;
 
-    for (i; i < ARRAY_COUNT(gMusicControlData); i++, music++) {
+    for (; i < ARRAY_COUNT(gMusicControlData); i++, music++) {
         switch (music->state) {
             case MUSIC_STATE_IDLE:
                 break;

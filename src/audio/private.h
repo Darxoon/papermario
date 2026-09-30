@@ -1,6 +1,8 @@
 #ifndef _AUDIO_PRIVATE_H_
 #define _AUDIO_PRIVATE_H_
 
+#include "audio.h"
+
 // ----------------------------------------------------------------------------------
 // load_banks.c
 // ----------------------------------------------------------------------------------
@@ -33,13 +35,13 @@ void au_mseq_restore_voices(AmbienceManager* manager, AmbiencePlayer* lambda);
 // ----------------------------------------------------------------------------------
 // sfx_player.c
 // ----------------------------------------------------------------------------------
-void au_sfx_init(SoundManager* manager, u8 arg1, u8 arg2, AuGlobals* arg3, u8 arg4);
-void au_sfx_load_groups_from_SEF(SoundManager* sndMgr);
+void au_sfx_init(SoundManager* manager, u8 priority, u8 busID, AuGlobals* globals, u8 minVoiceIdx);
+void au_sfx_load_groups_from_SEF(SoundManager* manager);
 void au_sfx_clear_queue(SoundManager* manager);
 void au_sfx_enqueue_event(SoundManager* manager, u32 soundID, s16 volume, s16 pitchShift, u8 pan);
 void au_sfx_begin_video_frame(SoundManager* manager);
 s32 au_sfx_set_reverb_type(SoundManager* manager, s32 arg1);
-void au_sfx_set_state(SoundManager* manager, s32 arg1);
+void au_sfx_set_state(SoundManager* manager, s32 state);
 void au_sfx_try_sound(SoundManager* manager, SoundRequest* request, SoundManagerCustomCmdList*);
 s16 au_sfx_manager_audio_frame_update(SoundManager* manager);
 
@@ -48,7 +50,7 @@ s16 au_sfx_manager_audio_frame_update(SoundManager* manager);
 // ----------------------------------------------------------------------------------
 void au_bgm_begin_video_frame(BGMPlayer* player);
 BGMPlayer* au_bgm_get_player_with_song_name(s32 songString);
-AuResult au_bgm_process_init_song(SongStartRequest* event);
+AuResult au_bgm_process_init_song(SongStartRequest* request);
 AuResult au_bgm_stop_song(s32 songName);
 void au_bgm_stop_all(void);
 AuResult au_bgm_is_song_playing(s32 songName);

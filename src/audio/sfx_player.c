@@ -1,20 +1,21 @@
 #include "audio.h"
 #include "audio/core.h"
+#include "audio/private.h"
 
 static void au_sfx_play_sound(SoundManager* manager, SoundPlayer* player, s8* readPos, SoundRequest* request, s32 priority, s32 exclusiveID);
 static void au_sfx_set_triggers(SoundManager* manager, u32 soundID);
 static void au_sfx_stop_by_id(SoundManager* manager, u32 soundID);
-static void au_sfx_stop_by_exlusive_id(SoundManager* manager, u32 soundID);
+static void au_sfx_stop_by_exlusive_id(SoundManager* manager, u32 exclusiveID);
 static void au_sfx_set_modifiers(SoundManager* manager, SoundRequest* request);
 static void au_sfx_set_player_modifiers(SoundPlayer* player, SoundRequest* request);
 
-static void au_sfx_update_basic(SoundManager* manager, SoundPlayer* player, AuVoice* arg2, u8 arg3);
+static void au_sfx_update_basic(SoundManager* manager, SoundPlayer* player, AuVoice* voice, u8 voiceIdx);
 static s16 au_sfx_get_scaled_volume(SoundManager* manager, SoundPlayer* player);
-static void au_sfx_update_sequence(SoundManager* manager, SoundPlayer* player, AuVoice* arg2, u8 arg3);
+static void au_sfx_update_sequence(SoundManager* manager, SoundPlayer* player, AuVoice* voice, u8 voiceIdx);
 static void au_sfx_set_voice_volume(AuVoice* voice, SoundManager* manager, SoundPlayer* player);
-static u8 au_sfx_get_random_pan(s32 arg0, s32 arg1, s32 arg2);
-static s32 au_sfx_get_random_pitch(s32 arg0, s32 arg1, s32 arg2);
-static u8 au_sfx_get_random_vol(s32 arg0, s32 arg1, s32 arg2);
+static u8 au_sfx_get_random_pan(s32 seed, s32 pan, s32 amplitude);
+static s32 au_sfx_get_random_pitch(s32 seed, s32 amplitude, s32 pitch);
+static u8 au_sfx_get_random_vol(s32 seed, s32 amplitude, s32 volume);
 static void au_sfx_reset_players(SoundManager* manager);
 
 static void au_SEFCmd_00_SetVolume(SoundManager* manager, SoundPlayer* player);

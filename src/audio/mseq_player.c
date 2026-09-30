@@ -1,5 +1,6 @@
 #include "audio.h"
 #include "audio/core.h"
+#include "audio/private.h"
 
 extern u8 BlankMseqData[];
 

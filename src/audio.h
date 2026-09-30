@@ -1,9 +1,8 @@
 #ifndef _AUDIO_H_
 #define _AUDIO_H_
-#include "nu/nusys.h"
+#include "nu/nusys.h" // IWYU pragma: keep
 #include "nu/nualsgi.h"
-#include "PR/n_abi.h"
-#include "common.h"
+#include "common_structs.h"
 
 typedef s32 s8_24; // 8.24 fixed point
 typedef s32 s16_16; // 16.16 fixed point
@@ -1415,8 +1414,6 @@ extern AmbienceManager* gAuAmbienceManager;
 extern SoundManager* gSoundManager;
 extern BGMPlayer* gBGMPlayerA;
 
-#endif
-
-#include "audio/private.h"
+#endif // NO_EXTERN_VARIABLES
 
 #endif

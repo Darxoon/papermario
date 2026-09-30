@@ -1,7 +1,7 @@
 #ifndef _AUDIO_PUBLIC_H_
 #define _AUDIO_PUBLIC_H_
 
-#include "audio.h"
+#include "common_structs.h"
 
 // ----------------------------------------------------------------------------------
 // snd_interface.c
@@ -89,8 +89,8 @@ s32 bgm_init_music_players(void);
 s32 bgm_set_song(s32 playerIndex, s32 songID, s32 variation, s32 fadeOutTime, s16 volume);
 void bgm_set_battle_song(s32, s32);
 void bgm_push_battle_song(void);
-s32 bgm_adjust_proximity(s32 playerIndex, s32 arg1, s16 arg2);
-bool bgm_fade_in_song(s32 playerIndex, s32 songID, s32 variation, s32 fadeInTime, s16 arg4, s16 arg5);
+s32 bgm_adjust_proximity(s32 playerIndex, s32 mix, s16 state);
+bool bgm_fade_in_song(s32 playerIndex, s32 songID, s32 variation, s32 fadeInTime, s16 fadeStartVolume, s16 fadeEndVolume);
 
 void bgm_update_music_control(void);
 bool bgm_is_any_song_playing(void);

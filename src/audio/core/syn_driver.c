@@ -1,8 +1,8 @@
-#include "common.h"
 #include "audio.h"
 #include "audio/core.h"
+#include "PR/n_abi.h"
 
-static s16 _getVol(s16 arg0, s32 arg1, s16 arg2, u16 arg3);
+static s16 _getVol(s16 ivol, s32 samples, s16 ratem, u16 ratel);
 
 BSS s16* AuDelayBufferMain;
 BSS s16* AuDelayBufferAux;
