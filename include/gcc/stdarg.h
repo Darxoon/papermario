@@ -73,8 +73,10 @@ typedef char * __gnuc_va_list;
 #endif
 
 #ifndef va_end
+#ifndef __clang__ // Required for clangd
 void va_end (__gnuc_va_list);		/* Defined in libgcc.a */
-#endif
+#endif // __clang__
+#endif // va_end
 #define va_end(__AP)	((void)0)
 
 /* We cast to void * and then to TYPE * because this avoids
