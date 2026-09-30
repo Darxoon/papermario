@@ -1,6 +1,7 @@
 #ifndef _SCRIPT_API_MACROS_H_
 #define _SCRIPT_API_MACROS_H_
 
+// TODO: remove these headers, they're only ever used transitively
 #include "evt.h"
 #include "stdlib/stdarg.h"
 

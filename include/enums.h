@@ -1,10 +1,12 @@
 #ifndef _ENUMS_H_
 #define _ENUMS_H_
 
-#include "ultra64.h"
-#include "types.h"
 #include "saved_byte_names.h"
 #include "saved_flag_names.h"
+
+// TODO: remove these headers, they're only ever used transitively
+#include "ultra64.h"
+#include "types.h"
 
 enum StoryProgress {
     STORY_INTRO                                 = -128,
@@ -1847,7 +1849,7 @@ enum BasicCameraParams {
     CAM_PARAM_ZOOM_PERCENT          = 8,
 };
 
-#include "item_enum.h"
+#include "item_enum.h" // IWYU pragma: export
 
 // used for chest and give item events
 enum GotItemType {
@@ -2402,7 +2404,7 @@ enum DoorSounds {
     DOOR_SOUNDS_UNUSED              = 6,
 };
 
-#include "sprite/sprite_shading_profiles.h"
+#include "sprite/sprite_shading_profiles.h" // IWYU pragma: export
 
 enum LightSourceFlags {
     LIGHT_SOURCE_DISABLED           = 0,
@@ -3559,7 +3561,7 @@ enum EffectSharedDataFlags {
     FX_SHARED_DATA_CAN_FREE     = 0x00000002,
 };
 
-#include "move_enum.h"
+#include "move_enum.h" // IWYU pragma: export
 
 enum GameContext {
     CONTEXT_WORLD       = 0,

@@ -3,7 +3,6 @@
 
 #include "common_structs.h"
 #include "enums.h"
-#include "script_api/map.h"
 
 // battle and stage are optional in overloaded NPC_GROUP macros
 #define NPC_GROUP(args...) VFUNC(NPC_GROUP, args)

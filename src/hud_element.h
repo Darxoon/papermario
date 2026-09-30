@@ -2,7 +2,7 @@
 #define HUD_ELEMENT_H
 
 #include "common_structs.h"
-#include "icon_offsets.h"
+#include "icon_offsets.h" // IWYU pragma: export
 
 #define HUD_ELEMENT_BATTLE_ID_MASK 0x800
 

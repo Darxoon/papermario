@@ -4,7 +4,6 @@
 #include "audio/public.h"
 #include "npc.h"
 #include "effects.h"
-#include "hud_element.h"
 #include "world/partners.h"
 #include "sprite.h"
 #include "sprite/npc/BattleMerlee.h"

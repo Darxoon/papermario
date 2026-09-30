@@ -2,10 +2,14 @@
 #define _MAP_H_
 
 #include "common_structs.h"
+
+// TODO: remove these headers, they're only ever used transitively
 #include "enums.h"
 #include "world/entrances.h"
 #include "script_api/map.h"
 #include "npc.h"
+#include "evt.h"
+#include "script_api/common.h"
 
 #define CLONED_MODEL(idx)       (10000+(idx))
 

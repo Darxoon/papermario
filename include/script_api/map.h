@@ -2,9 +2,6 @@
 #define _SCRIPT_API_MAP_H_
 
 #include "common_structs.h"
-#include "evt.h"
-
-#include "script_api/common.h"
 
 API_CALLABLE(MakeNpcs);
 API_CALLABLE(BasicAI_Main);

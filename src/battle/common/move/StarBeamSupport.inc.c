@@ -1,4 +1,5 @@
 #include "common.h"
+#include "model.h"
 #include "script_api/battle.h"
 #include "audio/public.h"
 

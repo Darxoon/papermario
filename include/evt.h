@@ -1,7 +1,7 @@
 #ifndef _EVT_H_
 #define _EVT_H_
 
-#include "ultra64.h"
+#include "types.h"
 
 // Should be at least the width of a pointer i.e. intptr_t
 typedef s32 Bytecode;

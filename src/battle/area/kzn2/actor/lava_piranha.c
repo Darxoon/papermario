@@ -6,7 +6,6 @@
 #include "sprite/player.h"
 #include "animation_script.h"
 #include "entity.h"
-#include "ld_addrs.h"
 #include "boss_common.h"
 #include "mapfs/kzn_bt05_shape.h"
 #include "include_asset.h"

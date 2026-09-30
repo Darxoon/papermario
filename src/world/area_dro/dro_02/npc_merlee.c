@@ -1,5 +1,7 @@
 #include "dro_02.h"
 #include "model.h"
+#include "sprite.h"
+#include "effects.h"
 #include "sprite/player.h"
 #include "include_asset.h"
 #include "audio/public.h"

@@ -2,9 +2,11 @@
 #define _COMMON_STRUCTS_H_
 
 #include "macros.h"
-#include "ultra64.h"
 #include "types.h"
 #include "evt.h"
+
+// TODO: remove these headers, they're only ever used transitively
+#include "ultra64.h"
 #include "enums.h"
 
 struct Evt;
